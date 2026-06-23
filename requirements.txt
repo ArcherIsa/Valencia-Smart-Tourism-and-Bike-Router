@@ -1,0 +1,13 @@
+streamlit
+pandas
+geopandas
+shapely
+folium
+streamlit-folium
+scikit-learn
+osmnx
+networkx
+numpy
+urllib3
+requests
+streamlit-searchbox

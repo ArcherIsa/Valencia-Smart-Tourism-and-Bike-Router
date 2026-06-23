@@ -91,7 +91,8 @@ def apply_custom_layout(image_path):
         
         /* Pull the main title slightly up */
         h1 {{
-            margin-top: -0.5rem;
+            margin-top: -2.5rem;
+            padding-top: 0rem;
         }}
         
         /* Sidebar */

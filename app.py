@@ -94,11 +94,11 @@ def apply_custom_layout(image_path):
         
         /* Push sidebar down to match main page */
         [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
-            padding-top: 200px;
+            padding-top: 100px;
             padding-bottom: 2rem; 
         }}
         [data-testid="stSidebarHeader"] {{
-            display: none !important; /* Hides the native sidebar top gap */
+            display: none; 
         }}
         
         /* Hide Streamlit footer text */
@@ -119,6 +119,14 @@ def apply_custom_layout(image_path):
         [data-testid="stSidebarCollapseButton"] {{
             display: none;
         }}
+
+        /* Remove padding from the map column */
+        div[data-testid="column"]:nth-of-type(1) {{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+        }}
+
         </style>
         """,
         unsafe_allow_html=True
@@ -193,12 +201,12 @@ with st.spinner("Loading the bike lanes of Valencia..."):
 
 
 # Sidebar (interests and instructions)
-st.sidebar.markdown("<h1 style='color: darkgreen; margin-top: 45px; padding-top: 0px;'>Your interests</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='color: darkgreen; padding-top: 0px;'>Your interests</h2>", unsafe_allow_html=True)
 available_interests = ['Historical', 'Gothic', 'Modern', 'Science', 'Nature', 'Park', 'Religious', 'Museum', 'Art', 'Food']
 user_interests = st.sidebar.multiselect("What types of monuments would you like to see on your route?", available_interests)
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("<h1 style='color: darkgreen;'>Map Controls</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='color: darkgreen;'>Map Controls</h2>", unsafe_allow_html=True)
 
 mostrar_red = st.sidebar.checkbox("Show complete bike network", value=False)
 
@@ -624,7 +632,7 @@ with col1:
                 st.rerun()
 
 with col2:
-    st.markdown("<h3 style='color: darkgreen;'>Search Locations</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color: darkgreen;'>Search Locations</h4>", unsafe_allow_html=True)
         
     # Origin container
     with st.container():
@@ -674,7 +682,7 @@ with col2:
             
     st.markdown("---")
 
-    st.markdown("<h3 style='color: darkgreen;'>Route information</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color: darkgreen;'>Route information</h4>", unsafe_allow_html=True)
     
     if st.session_state.origin and st.session_state.destination:
         if dist_directa > 0:

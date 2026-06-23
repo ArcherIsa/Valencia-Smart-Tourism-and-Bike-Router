@@ -55,10 +55,10 @@ def apply_custom_layout(image_path):
         <div class="viewport-footer"></div>
         
         <style>
-        /* Image footer */
+        /* Header across entire screen */
         .viewport-footer {{
             position: fixed;
-            bottom: 0; 
+            top: 0;
             left: 0;
             width: 100vw;
             height: 150px; 
@@ -69,15 +69,15 @@ def apply_custom_layout(image_path):
             pointer-events: none;
         }}
         
-        /* Remove top whitespace & add bottom padding for footer */
+        /* Top padding main container */
         .block-container {{
-            padding-top: 0.5rem;
-            padding-bottom: 180px;
-            padding-left: 1rem;
+            padding-top: 120px;
+            padding-bottom: 2rem; 
+            padding-left: 2rem;
             margin-left: 0px;
         }}
 
-        /* Keep loading symbol container active but background transparent */
+        /* Loading symbol */
         header[data-testid="stHeader"] {{
             background: transparent; 
             box-shadow: none;
@@ -89,16 +89,15 @@ def apply_custom_layout(image_path):
             display: none;
         }}
         
-        /* Pull the main title slightly up */
+        /* Pull the main title up */
         h1 {{
-            margin-top: -2.5rem;
-            padding-top: 0rem;
+            margin-top: 0rem;
         }}
         
-        /* Sidebar */
+        /* Push sidebar down to match main page */
         [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
-            padding-top: 0.5rem;
-            padding-bottom: 180px;
+            padding-top: 190px;
+            padding-bottom: 2rem; 
         }}
         [data-testid="stSidebarHeader"] {{
             display: none; 

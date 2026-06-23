@@ -148,8 +148,8 @@ span[data-baseweb="tag"] span {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='color: darkgreen;'>Valencia Smart Tourism & Bike Router</h1>", unsafe_allow_html=True)
-st.markdown("Select your **Origin** and **Destination** by clicking on the map or typing in the search bar. " \
+st.markdown("<h1 style='color: darkgreen;'>Valencia Bike Route</h1>", unsafe_allow_html=True)
+st.markdown("Select your **Origin** and **Destination** by clicking on the map or typing in the search bars. " \
 "Click on the routes on the map or the name on the right to highlight them.")
 
 
@@ -634,7 +634,7 @@ with col1:
                 st.rerun()
 
 with col2:
-    st.markdown("<h4 style='color: darkgreen;'>Search Locations</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color: darkgreen; padding-top: 0px;'>Search Locations</h4>", unsafe_allow_html=True)
         
     # Origin container
     with st.container():

@@ -61,7 +61,7 @@ def apply_custom_layout(image_path):
             top: 0;
             left: 0;
             width: 100vw;
-            height: 50px; 
+            height: 150px; 
             background-image: url("data:image/jpeg;base64,{encoded_image}");
             background-size: cover;
             background-position: center 55%;

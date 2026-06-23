@@ -148,7 +148,7 @@ span[data-baseweb="tag"] span {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='color: darkgreen;'>Valencia Bike Route</h1>", unsafe_allow_html=True)
+st.image("Valencia.jpg", use_container_width=False, width=500)
 st.markdown("Select your **Origin** and **Destination** by clicking on the map or typing in the search bars. " \
 "Click on the routes on the map or the name on the right to highlight them.")
 

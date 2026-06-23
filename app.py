@@ -73,7 +73,7 @@ def apply_custom_layout(image_path):
         .block-container {{
             padding-top: 120px;
             padding-bottom: 2rem; 
-            padding-left: 3rem;
+            padding-left: 2rem;
             margin-left: 0px;
         }}
 
@@ -96,7 +96,7 @@ def apply_custom_layout(image_path):
         
         /* Push sidebar down to match main page */
         [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
-            padding-top: 200px;
+            padding-top: 190px;
             padding-bottom: 2rem; 
         }}
         [data-testid="stSidebarHeader"] {{

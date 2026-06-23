@@ -61,7 +61,7 @@ def apply_custom_layout(image_path):
             top: 0;
             left: 0;
             width: 100vw;
-            height: 150px; 
+            height: 100px; 
             background-image: url("data:image/jpeg;base64,{encoded_image}");
             background-size: cover;
             background-position: center 55%;
@@ -71,7 +71,7 @@ def apply_custom_layout(image_path):
         
         /* Top padding main container */
         .block-container {{
-            padding-top: 120px;
+            padding-top: 70px;
             padding-bottom: 2rem; 
             padding-left: 2rem;
             margin-left: 0px;
@@ -96,7 +96,7 @@ def apply_custom_layout(image_path):
         
         /* Push sidebar down to match main page */
         [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
-            padding-top: 190px;
+            padding-top: 140px;
             padding-bottom: 2rem; 
         }}
         [data-testid="stSidebarHeader"] {{

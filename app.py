@@ -73,6 +73,8 @@ def apply_custom_layout(image_path):
         .block-container {{
             padding-top: 120px;
             padding-bottom: 2rem; 
+            padding-left: 1rem;
+            margin-left: 0px;
         }}
 
         /* Loading symbol */
@@ -94,7 +96,7 @@ def apply_custom_layout(image_path):
         
         /* Push sidebar down to match main page */
         [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {{
-            padding-top: 100px;
+            padding-top: 150px;
             padding-bottom: 2rem; 
         }}
         [data-testid="stSidebarHeader"] {{
